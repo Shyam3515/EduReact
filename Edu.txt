@@ -1,0 +1,60 @@
+ReactJs is a declarative, efficient and flexible javascript library for buildindg fast and interactive User Interfaces.
+React is used to build Singel Page Application.
+Index.html is the only page that is saved on browser, inorder to display whta ever we injected within this div from index.js.
+
+Why React?
+1. Market Demand: is high for react library.
+2. Speed : 
+    React uses some clever techniques to minimize the number of costly DOM operations that is required to update the UI.
+    [It can change data over time without having to reload the page.]
+3. Many big Applications are using React.
+    [Netflix, Facebook, Instagram, Paypal, DropBox....]
+4. Applications build with react follows component-based architectural approach.
+    It means components are basic buildindg block of React.
+
+What is Component?
+    1. It is a isolated piece of UI, that is composed to build complex UI.
+    2. All of these single components are wrapped up in a single root component.
+    3. The root componenet is the default componenet of every react application.
+    4. So, the responsibility of root component is to serve as a container for every 5. other component that will be created when building react Application.   
+    6. Root is nothing but mother of all components.
+    7. Components are reusable, so in reactjs a reusable componenet is a piece of
+       UI, that can be used in various parts of Application to build more than one UI[one componenet can be used with different properties to display different infoemation].  
+    We have two types of components :
+    1. Functional : These are JS functions that accept props as an argument and then return a valid JSX, which in actual sense describes the UI.
+    2. Class : Class component is usually a regular ESS classes that extends a component class from react Library, and it must have the render method that returns the JSX, which in turn describes the UI.
+    Components must be pascal named.        
+
+JSX[JavaScript Xml]
+ 1. Everthing we see inside the return function of App.js, is the JSX.
+ 2. It is a syntax extension of JS that io used to define the meaning and structure of the web content.
+ 3. And the difference between JSX and html is the className attribute, in html it is class, because it is a reserve 
+    keyword in JS, similarly for attribute also, it should be htmlFor.
+ 4. You have wrap up the entire JSX in the parent Element.    
+
+Props[Properties]:
+    It is an object that stores the value of an attribute of a tag.
+    Props enables you to pass data from one component to another, precisely from a parent component to child.
+    props are immutable.
+
+UseState-Hooks:    
+    To maintain a components data that changes over time, we have to make use of the use state hooks.
+    Use State is a special function, that takes the initial State as an argument and then returns an array of two entries.As it is a function we have to invoke it.
+
+List-Rendering(Map Method):
+    In ReactJs best way to display list opf items on the screen is by using the map method.
+    The map method allows you to iterate over an array and modify its elements using a call-back function.
+    The callback function will then be executed on each of the arrays elements.
+    **Map is a standard JS function, that could be called on any array.
+
+//In HTML form elements are responsible on their own to handle user inputs and update the values respectively.
+  But in react we want react to handle and control the form Element, and so such form elements
+  whose value is controlled and handled by react is called controlled components.
+
+  //While creating inputs, we will have normal HTML inputs,but in react we have to convert this into
+    a controlled input, so to do that we have to follow three steps:
+    1. import useState hook, and declare the State variable that will control the forming period.
+
+//Fragments
+    Fragment allows us to group a list of children elements without adding extra node to the DOM.
+    
