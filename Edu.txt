@@ -16,7 +16,7 @@ What is Component?
     1. It is a isolated piece of UI, that is composed to build complex UI.
     2. All of these single components are wrapped up in a single root component.
     3. The root componenet is the default componenet of every react application.
-    4. So, the responsibility of root component is to serve as a container for every 5. other component that will be created when building react Application.   
+    4. So, the responsibility of root component is to serve as a container for every other component that will be created when building react Application.   
     6. Root is nothing but mother of all components.
     7. Components are reusable, so in reactjs a reusable componenet is a piece of
        UI, that can be used in various parts of Application to build more than one UI[one componenet can be used with different properties to display different infoemation].  
@@ -27,7 +27,7 @@ What is Component?
 
 JSX[JavaScript Xml]
  1. Everthing we see inside the return function of App.js, is the JSX.
- 2. It is a syntax extension of JS that io used to define the meaning and structure of the web content.
+ 2. It is a syntax extension of JS that is used to define the meaning and structure of the web content.
  3. And the difference between JSX and html is the className attribute, in html it is class, because it is a reserve 
     keyword in JS, similarly for attribute also, it should be htmlFor.
  4. You have wrap up the entire JSX in the parent Element.    
