@@ -1,6 +1,6 @@
 ReactJs is a declarative, efficient and flexible javascript library for buildindg fast and interactive User Interfaces.
 React is used to build Singel Page Application.
-Index.html is the only page that is saved on browser, inorder to display whta ever we injected within this div from index.js.
+Index.html is the only page that is saved on browser, inorder to display what ever we injected within this div from index.js.
 
 Why React?
 1. Market Demand: is high for react library.
