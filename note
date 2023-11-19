@@ -1,0 +1,167 @@
+**React is a open source JS library used for building frontend applications.
+Using react we can create fast and better frontend applications.
+React is created by FaceBook in 2011.
+create-react-app includes built in tools such as webpack, Babel, and ESLint.
+Start by including three scripts, the first two let us write React code in our JavaScripts, and the third, Babel, allows us to write JSX syntax and ES6 in older browsers.
+
+**=> Why react is popular : Before react was created when our webpage is loaded in a browser, our browser creates a tree like structure with our HTML code this tree structure is called as Document Object Model[DOM].
+Now, by using this Dom in JS we can add various functionality for our application like hiding the sidebar. Imagine if we create large applications with vanilla JS, we need to write lot of code and it becomes hard to manage. Now React comes into picture with react we don't need to worry about vanilla JS code, instead of that we will divide our large application into small pice of code, this small piece of code is known as component. 
+Now React will take care about writing simple code for creating and updating the DOM.Components is used to write reusable and better organized code.
+
+
+***why react is fast means => It is a single Page Application[It loads only once.]
+                           It has a virtual DOM feature.
+
+=> when you build a web page with react, it maintains a virtual representation of your webpage and it is called as virtual DOM.whenever you want to update your webpage you describe the changes to the virtual DOM, instead of directly modifying the real DOM.
+Reacts virtual DOM efficiently compares the new virtual DOM with the previous one.[same as your virtual puzzle solver quickly identifying which puzzle pieces need to move on its own puzzle.]
+After that react knows exactly which part of real Dom need to change to match the new virtual Dom, which means it only applies the necessary changes making your webpage more efficient and responsive especially when there are frequent updates or interactions happening.
+
+Virtual DOM advantages:
+1) Smooth updates on real DOM.
+2) Enhancing the performance.
+3) Better user experience
+    
+
+***NodeJs:
+For the setup development of react we are just using one part of NodeJS, which is 'npm'[Node Package Manager].
+This npm is used to install React Applications and some additional features.
+npm install - installs all packages that are required to create react application like
+    WEBPACK - which is used to bundle different files.
+    Babel - converts JSX into simple JS code which browsers can understand
+
+Command Prompt :
+=>go to file path in folder and clear file path and give 'cmd' and enter it directly opens the CD with the given path.    
+to move forward in path 'cd file name'
+to move backward in path 'cd..'
+=>* here we are using 'vite' for creating the react app which is latest and fast compared to create-react-app
+
+=> open terminal and type "npm create vite@latest".
+npx: installed 1 in 9.37s
+√ Project name: ... first-application
+√ Select a framework: » React
+√ Select a variant: » JavaScript
+
+Scaffolding project in C:\Users\2110545\OneDrive - Cognizant\Desktop\ReactApp\first-application...
+
+Done. Now run:
+  cd first-application
+  npm install
+  
+  after npm install => write 'code .' and enter which opens our editor
+  => to run this react application write 'npm run dev' in terminal[ctrl+`]
+
+  ***npm run dev
+
+
+**React template walkthrough:
+1) Node modules : In this folder we have all packages installed for our application without this node modules we Can't even run our react application. It is the folder where our all installed packages and library stay.
+2) Public folder : This public folder contains static assets that is served directly to the client.
+3) Source folder : This is where we write our all the code.
+    a) assets : Here we put all the images, fonts, icons,... which we use in our components to write our code.
+    b) App.jsx : App.jsx is the starting point of the component chain we will call it "root component". Using this jsx[JS Xml] we can write HTML and JavaScript code together and this is the heart of our React. Jsx syntax is similar to HTML markup so we can easily write code in jS in less code.
+    c) main.jsx : main.jsx is the file which connects our components with index.html file which is our main HTML file.
+
+4) index.html : This is the main HTML file which is running in our browser.
+  => id="root" : Div with id root is the main tag, in which all our main components will display on the browser.
+5) gitignore : In gitignore file we can define which files or folder will not upload to github.
+6) Package.json : It has all the information about our application like name, version, pack version, etc...
+7) PackageLock.json : It is essentially used to lock the dependencies to a specific version number..
+8) vite.config.js : Which has the configuration object for our application.
+
+
+***Component:
+Components is used to write reusable and better organized code.It is used to define certain part of UI.
+What is Component?
+    1. It is a isolated piece of UI, that is composed to build complex UI.
+    2. All of these single components are wrapped up in a single root component.
+    3. The root component is the default component of every react application.
+    4. So, the responsibility of root component is to serve as a container for every other component that will be created when building react Application.   
+    6. Root is nothing but mother of all components.
+    7. Components are reusable, so in ReactJs a reusable component is a piece of UI, that can be used in various parts of Application to build more than one UI[one component can be used with different properties to display different information].  
+    We have two types of components :
+    1. Functional : These are JS functions that accept props as an argument and then return a valid JSX, which in actual sense describes the UI.
+    2. Class : Class component is usually a regular ESS classes that extends a component class from react Library, and it must have the render method that returns the JSX, which in turn describes the UI.
+    Components must be pascal named.
+
+
+***Extensions:
+=> Both Js and Jsx extensions works same, but generally we use jsx extension because, when our application grow we may have to write some JS code and at that time this Jsx extension will tell you which file is react component and which file is just vanilla JS code.
+=> Also when we use .jsx extension, our code editor can give us better service like syntax suggestion and error checking to write jsx code.
+
+
+***How JSX and Babel works?
+JSX - Jsx code is modern code for writing HTML and JS together.
+Babel - Babel is a compiler which converts JSX into simple JS code which browsers can understand.
+
+
+//Fragments
+    Fragment allows us to group a list of children elements without adding extra node to the DOM.
+    For not adding unwanted div's every time we use fragments.
+    Fragment is used to add parent element in our jsx but it will not return any UI component.
+
+ {/*Adding attributes 
+        As we discussed JSX gets converted to simple JS object, in JS the class keyword is reserved so here we can't use the same class attribute, we need to use className attribute */}
+
+
+***JSX[JavaScript Xml]
+ 1. Everything we see inside the return function of App.js, is the JSX.
+ 2. It is a syntax extension of JS that is used to define the meaning and structure of the web content.
+ 3. And the difference between JSX and html is the className attribute, in html it is class, because it is a reserve 
+    keyword in JS, similarly for attribute also, it should be htmlFor.
+ 4. You have wrap up the entire JSX in the parent Element.    
+
+
+***Props[Properties]:
+    Props are arguments passed into react components
+    It is an object that stores the value of an attribute of a tag.
+    Props enables you to pass data from one component to another, precisely from a parent component to child.
+    props are immutable.
+
+
+***UseState-Hooks:  
+    => To define a variable as a state in functional component we have to use one hook.
+    State is used to tell React, watch this variable and if it change reflect on the DOM.
+    =>To maintain a components data that changes over time, we have to make use of the use state hooks.
+    =>Use State is a special function, that takes the initial State as an argument and then returns an array of two entries.As it is a function we have to invoke it.
+    *=>First variable is its current value, and the second variable is the function for updating the value.
+ 
+ HOOKS : hooks are functions that make functional component work like class component.
+ *** Before hooks we used class components for using the UseState, and there are problems with class-Components : 
+        1) Little Difficult
+        2) Confusing this KW
+        3) Write Boiler plate again and again.
+        So, react developed some special functions that we can use in functional components and those are called Hooks.
+
+***List-Rendering(Map Method):
+    In ReactJs best way to display list of items on the screen is by using the map method.
+    The map method allows you to iterate over an array and modify its elements using a call-back function.
+    The callback function will then be executed on each of the arrays elements.
+    **Map is a standard JS function, that could be called on any array.
+
+ReactStrict Mode:
+    React Strict Mode is a tool provided by react that helps developers write better quality code by highlighting potential problems during the development.
+
+Displaying tags in column:
+    =>we need to access that array set function in our taskForm component, bcz when we submit our task we want to add that in this array and after that we need to display that array state in this task column component. 
+    So we need that task array in these two components taskForm and taskColumn. So we have to create that state variable in this app.jsx.So we can pass that as props in these two components.
+
+
+UseEffect:
+    =>If we have something that runs automatically when our task state change, then our problem is solved.
+    => we have that feature in react for detecting the changes in state variable we have one hook called useEffect.
+
+***UseEffect is used to perform side effects in our component...
+What is side Effect? => Side Effects are actions which are performed in the outside world.
+=> We perform sideEffects when we want to reach outside of our react component to do something, for example : 
+    1) Fetching the Data from API
+    2) Directly updating the Dom
+    3) Timer Functions(SetTimeOut, SetInterval)   
+
+
+**Bundler:
+    // React use bundler like webpack to bundle all code and assets which we use in application, when we import image file in our component then bundler knows to include the image in the bundle.
+
+
+*****linking the value of our task to the input value =>
+    1) To access value from the input fields, when we change anything, we are using the name attribute. 
+    2) Similarly, when we change anything in our taskData, we need to apply those changes to the input fields through the value attribute.
